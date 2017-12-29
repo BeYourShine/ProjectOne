@@ -15,6 +15,7 @@ en:
       link_signup: "Sign up now!"
       img: "rails1.png"
       img_alt: "Rails logo"
+      h1_feed: "Micropost Feed"
     help:
       title: "Help"
       p1: "Get help on the Ruby on Rails Tutorial at the"
@@ -68,6 +69,9 @@ en:
     user:
       link_delete: "delete"
       confirm_delete: "You sure?"
+    show:
+      micropost: "Microposts ("
+      h3: ")"
   layouts:
     footer:
       p1: "The"
@@ -92,6 +96,12 @@ en:
     error_messages:
       h1: "The form contains "
       error: "error"
+    user_info:
+      link_my_profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      placeholder_text_area: "Compose new micropost..."
+      submit: "Post"
   sessions:
     new:
       title: "Log in"
@@ -148,3 +158,19 @@ en:
         not_authenticated: "User not authenticated"
       eror:
         pass_empty: "can't be empty"
+  microposts:
+    micropost:
+      p1: "Posted "
+      p2: " ago."
+      delete_post: "delete"
+      confirm_delete: "You sure?"
+    controller:
+      flash:
+        create_micropost: "Micropost created!"
+        delete_micropost: "Micropost deleted"
+    model:
+      picture_size:
+        error: "should be less than 5MB"
+  javascript:
+    micropost:
+      alert_maximum_size: "Maximum file size is 5MB. Please choose a smaller file."

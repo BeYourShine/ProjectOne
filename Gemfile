@@ -14,6 +14,9 @@ gem "jquery-rails"
 gem "faker", "1.7.3"
 gem "will_paginate", "3.1.6"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "carrierwave"
+gem "mini_magick", "4.7.0"
+gem "i18n-js"
 gem "sqlite3"
 gem "puma", "~> 3.7"
 gem "sass-rails", "~> 5.0"
@@ -45,6 +48,7 @@ end
 
 group :production do
   gem "pg", "0.18.4"
+  gem "fog", "1.42"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
