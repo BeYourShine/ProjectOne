@@ -7,11 +7,14 @@
       "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application",
       "data-turbolinks-track": "reload" %>
+    <%= render (t "layout.shim") %>
   </head>
 
   <body>
-    <%= link_to (t "lang.eng"), locale:"en" %>
-    <%= link_to (t "lang.viet"), locale:"vi" %>
-    <%= yield %>
+    <%= render (t "layout.header") %>
+    <div class="container">
+      <%= yield %>
+      <%= render (t "layout.footer") %>
+    </div>
   </body>
 </html>

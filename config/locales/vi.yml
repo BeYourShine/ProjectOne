@@ -5,6 +5,10 @@ vi:
   app:
     supt1: "Ví dụ ứng dụng Ruby on Rails Tutorial"
     supt2: " | Ví dụ ứng dụng Ruby on Rails Tutorial"
+  layout:
+    shim: "layouts/shim"
+    header: "layouts/header"
+    footer: "layouts/footer"
   static_pages:
     home:
       title: "Trang chủ"
@@ -13,6 +17,10 @@ vi:
       plinkRail: "Ruby on Rails Tutorial"
       link1: "http://www.railstutorial.org/"
       p2: "mẫu ứng dụng."
+      pLinkSignup: "Đăng ký ngay!"
+      img: "rails1.png"
+      altImg: "Rails ảnh"
+      linkImg: "http://rubyonrails.org/"
     help:
       title: "Trợ giúp"
       p1: "Nhận trợ gíup từ rails từ rails tutorial tại "
@@ -41,3 +49,26 @@ vi:
       p4: "để dạy về phát triển với"
       pLinkRail2: "Ruby on Rails"
       p5: ". Đây là mẫu ứng dụng cho hướng dẫn"
+  user:
+    new:
+      title: "Đăng ký"
+      p1: "Đây là trang đăng ký mới của người dùng."
+  layouts:
+    footer:
+      p1: "Bộ"
+      pLinkRails: "Ruby on Rails Tutorial"
+      linkRails: "http://www.railstutorial.org/"
+      p2: "bởi "
+      pLinkMichael: "Michael Hartl"
+      linkMichael: "http://www.michaelhartl.com/"
+      pLinkAbout: "Về chúng tôi"
+      pLinkContact: "Liên hệ"
+      pLinkNew: "Tin tức"
+      linkNew: "http://news.railstutorial.org/"
+    header:
+      pLinkApp: "Mẫu ứng dụng"
+      pLinkHome: "Trang chủ"
+      pLinkHelp: "Trợ gíup"
+      pLinkLog: "Đăng nhập"
+    shim:
+      ie: "//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"

@@ -5,14 +5,22 @@ en:
   app:
     supt1: "Ruby on Rails Tutorial Sample App"
     supt2: " | Ruby on Rails Tutorial Sample App"
+  layout:
+    shim: "layouts/shim"
+    header: "layouts/header"
+    footer: "layouts/footer"
   static_pages:
     home:
       title: "Home"
-      h1: "Sample App"
+      h1: "Welcome to the Sample App"
       p1: "This is the home page for the"
       plinkRail: "Ruby on Rails Tutorial"
       link1: "http://www.railstutorial.org/"
       p2: "sample application."
+      pLinkSignup: "Sign up now!"
+      img: "rails1.png"
+      altImg: "Rails logo"
+      linkImg: "http://rubyonrails.org/"
     help:
       title: "Help"
       p1: "Get help on the Ruby on Rails Tutorial at the"
@@ -41,3 +49,26 @@ en:
       p4: "to teach web development with"
       pLinkRail2: "Ruby on Rails"
       p5: ". This is the sample application for the tutorial."
+  user:
+    new:
+      title: "Sign up"
+      p1: "This will be a signup page for new users."
+  layouts:
+    footer:
+      p1: "The"
+      pLinkRails: "Ruby on Rails Tutorial"
+      linkRails: "http://www.railstutorial.org/"
+      p2: "by "
+      pLinkMichael: "Michael Hartl"
+      linkMichael: "http://www.michaelhartl.com/"
+      pLinkAbout: "About"
+      pLinkContact: "Contact"
+      pLinkNew: "News"
+      linkNew: "http://news.railstutorial.org/"
+    header:
+      pLinkApp: "sample app"
+      pLinkHome: "Home"
+      pLinkHelp: "Help"
+      pLinkLog: "Log in"
+    shim:
+      ie: "//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"

@@ -1,7 +1,11 @@
 <% provide :title, (t ".title") %>
-<h1><%= t ".h1" %></h1>
-<p>
-  <%= t ".p1"  %>
-  <%= link_to (t ".plinkRail"), (t ".link1") %>
-  <%= t ".p2"  %>
-</p>
+<div class="center jumbotron">
+  <h1><%= t ".h1" %></h1>
+  <h2>
+    <%= t ".p1"  %>
+    <%= link_to (t ".plinkRail"), (t ".link1") %>
+    <%= t ".p2"  %>
+  </h2>
+  <%= link_to (t ".pLinkSignup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag((t ".img"), alt: (t ".altImg")), (t ".linkImg")  %>

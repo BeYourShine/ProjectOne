@@ -1,0 +1,14 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to (t ".pLinkApp"), root_path, class: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to (t ".pLinkHome"),   root_path %></li>
+        <li><%= link_to (t ".pLinkHelp"),   help_path %></li>
+        <li><%= link_to (t "lang.eng"), locale:"en" %></li>
+        <li><%= link_to (t "lang.viet"), locale:"vi" %></li>
+        <li><%= link_to (t ".pLinkLog"), '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -34,7 +34,8 @@ RemoveEmptyHelpersCheck: {
 RemoveTrailingWhitespaceCheck: { }
 RemoveUnusedMethodsInControllersCheck: {
   except_methods: ["StaticPagesController#home","StaticPagesController#help",
-  "StaticPagesController#about","StaticPagesController#contact"
+  "StaticPagesController#about","StaticPagesController#contact",
+  UserController#new,
   ],
   ignored_files: []
 }
