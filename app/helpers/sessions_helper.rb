@@ -4,7 +4,7 @@ module SessionsHelper
       @current_user ||= User.find_by id: user_id
     elsif (cookie_id = cookies.signed[:user_id])
       user = User.find_by id: cookie_id
-      if user && user.authenticated?(cookies[:remember_token])
+      if user && user.authenticated?(:remember, cookies[:remember_token])
         log_in user
         @current_user = user
       end
@@ -32,11 +32,10 @@ module SessionsHelper
   end
 
   def remember user
-    @token = User.new_token
     @user_remember = user
-    @user_remember.remember @token
+    @user_remember.remember
     cookie_pernanet.signed[:user_id] = @user_remember.id
-    cookie_pernanet[:remember_token] = @token
+    cookie_pernanet[:remember_token] = @user_remember.remember_token
   end
 
   def redirect_back_or default

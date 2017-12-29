@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
-  before_action :find_user, only: %i(show edit update destroy )
+  before_action :find_user, only: %i(show edit update destroy)
   before_action :logged_in_user, only: %i(destroy edit index update)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
 
   def index
-    @users = User.paginate page: params[:page],
+    @users = User.activate(true).paginate page: params[:page],
       per_page: Settings.controller.users.user_per_page
   end
 
@@ -16,9 +16,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if user.save
-      log_in user
-      flash[:success] = t "users.flash.success_create"
-      redirect_to user
+      user.send_activation_email
+      flash[:info] = t "users.flash.check_mail"
+      redirect_to root_url
     else
       render :new
     end
@@ -59,6 +59,7 @@ class UsersController < ApplicationController
 
   def find_user
     return if (@user = User.find_by id: params[:id])
+    return if user.activated?
     flash[:danger] = t "users.flash.no_user"
     redirect_to root_path
   end

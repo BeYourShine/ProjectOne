@@ -11,10 +11,11 @@ class ApplicationController < ActionController::Base
 
   private
 
-  attr_reader :lang
+  attr_reader :lang, :cookies_lang
 
   def set_locale
-    @lang = cookies[:language].to_sym if cookies[:language]
+    @cookies_lang = cookies[:language]
+    lang = cookies_lang.to_sym if cookies_lang
     I18n.locale =
       if I18n.available_locales.include? lang
         lang

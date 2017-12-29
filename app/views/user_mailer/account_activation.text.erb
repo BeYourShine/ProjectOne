@@ -1,0 +1,6 @@
+<%= t "account_activation.mailer.p1" %>
+<%= @user.name %>
+<%= t "account_activation.mailer.p2" %>
+<%= t "account_activation.mailer.p3" %>
+
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>

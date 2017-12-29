@@ -50,6 +50,7 @@ en:
       please_login: "Please log in."
       user_delete: "User deleted"
       find_user_fail: "Invalid user"
+      check_mail: "Please check your email to activate your account."
     edit:
       title: "Edit user"
       h1: "Update your profile"
@@ -102,3 +103,17 @@ en:
       link_signup: "Sign up now!"
     flash:
       invalid_login: "Invalid email/password combination !"
+    controller:
+      account_not_activated: "Account not activated. Check your email for the activation link"
+  account_activation:
+    control:
+      active_user:
+        flash_activate: "Account activated!"
+        flash_inactive: "Invalid activation link"
+    mailer:
+      title: "Sample App"
+      p1: "Hi "
+      p2: ","
+      p3: "Welcome to the Sample App! Click on the link below to activate your account:"
+      link_activate: "Activate"
+      subject: "Account activation"
