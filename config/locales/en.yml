@@ -1,33 +1,43 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  lang:
+    eng: "English"
+    viet: "Tiếng Việt"
+  app:
+    supt1: "Ruby on Rails Tutorial Sample App"
+    supt2: " | Ruby on Rails Tutorial Sample App"
+  static_pages:
+    home:
+      title: "Home"
+      h1: "Sample App"
+      p1: "This is the home page for the"
+      plinkRail: "Ruby on Rails Tutorial"
+      link1: "http://www.railstutorial.org/"
+      p2: "sample application."
+    help:
+      title: "Help"
+      p1: "Get help on the Ruby on Rails Tutorial at the"
+      pLinkHelp: "Rails Tutorial help section"
+      linkHelp: "http://www.railstutorial.org/help"
+      p2: ". To get help on this sample app, see the"
+      pLinkBook: "Ruby on Rails Tutorial book"
+      linkBook: "http://www.railstutorial.org/book"
+    contact:
+      title: "Contact"
+      p1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      pLinkContact: "contact page"
+      linkContact: "http://www.railstutorial.org/contact"
+      p2: "."
+    about:
+      title: "About"
+      p1: "The"
+      pLinkRail: "Ruby on Rails Tutorial"
+      linkRail: "http://www.railstutorial.org/"
+      p2: "is a"
+      pLinkBook: "book"
+      linkBook: "http://www.railstutorial.org/book"
+      p3: "and"
+      pLinkSCat: "screencast series"
+      linkCat: "http://screencasts.railstutorial.org/"
+      p4: "to teach web development with"
+      pLinkRail2: "Ruby on Rails"
+      p5: ". This is the sample application for the tutorial."

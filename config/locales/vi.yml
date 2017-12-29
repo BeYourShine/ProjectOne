@@ -1,0 +1,43 @@
+vi:
+  lang:
+    eng: "English"
+    viet: "Tiếng Việt"
+  app:
+    supt1: "Ví dụ ứng dụng Ruby on Rails Tutorial"
+    supt2: " | Ví dụ ứng dụng Ruby on Rails Tutorial"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      h1: "Mẫu ứng dụng"
+      p1: "Đây là trang chủ của"
+      plinkRail: "Ruby on Rails Tutorial"
+      link1: "http://www.railstutorial.org/"
+      p2: "mẫu ứng dụng."
+    help:
+      title: "Trợ giúp"
+      p1: "Nhận trợ gíup từ rails từ rails tutorial tại "
+      pLinkHelp: "Rails Tutorial help section"
+      linkHelp: "http://www.railstutorial.org/help"
+      p2: ". Nhận trợ giúp về ứng dụng tại"
+      pLinkBook: "Ruby on Rails Tutorial book"
+      linkBook: "http://www.railstutorial.org/book"
+    contact:
+      title: "Liên hệ"
+      p1: "Liên hệ về mẫu ứng dụng Ruby on Rails Tutorial tại"
+      pLinkContact: "contact page"
+      linkContact: "http://www.railstutorial.org/contact"
+      p2: "."
+    about:
+      title: "Về chúng tôi"
+      p1: "Hướng dẫn"
+      pLinkRail: "Ruby on Rails Tutorial"
+      linkRail: "http://www.railstutorial.org/"
+      p2: "bao gồm"
+      pLinkBook: "sách"
+      linkBook: "http://www.railstutorial.org/book"
+      p3: "và"
+      pLinkSCat: "chuỗi hình ảnh"
+      linkCat: "http://screencasts.railstutorial.org/"
+      p4: "để dạy về phát triển với"
+      pLinkRail2: "Ruby on Rails"
+      p5: ". Đây là mẫu ứng dụng cho hướng dẫn"
