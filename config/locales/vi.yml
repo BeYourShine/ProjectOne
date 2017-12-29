@@ -41,6 +41,14 @@ vi:
     new:
       title: "Đăng ký"
       p1: "Đây là trang đăng ký mới của người dùng."
+      name: "Tên người dùng"
+      email: "Email"
+      pass: "Mật khẩu"
+      confirm: "Nhập lại mật khẩu"
+      submit: "Tạo mới tài khoản"
+    flash:
+      success_create: "Chào mừng tới mẫu ứng dụng!"
+      no_user: "Không tồn tại người dùng"
   layouts:
     footer:
       p1: "Bộ"
@@ -55,5 +63,7 @@ vi:
       link_home: "Trang chủ"
       link_help: "Trợ gíup"
       link_log: "Đăng nhập"
-    shim:
-      ie: "//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"
+  shared:
+    error_messages:
+      h1: "Biểu mẫu cần sửa "
+      error: "Lỗi"

@@ -41,6 +41,14 @@ en:
     new:
       title: "Sign up"
       p1: "This will be a signup page for new users."
+      name: "Name"
+      email: "Email"
+      pass: "Password"
+      confirm: "Confirmation"
+      submit: "Create my account"
+    flash:
+      success_create: "Welcome to the Sample App!"
+      no_user: "Invalid user"
   layouts:
     footer:
       p1: "The"
@@ -55,5 +63,7 @@ en:
       link_home: "Home"
       link_help: "Help"
       link_log: "Log in"
-    shim:
-      ie: "//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"
+  shared:
+    error_messages:
+      h1: "The form contains "
+      error: "error"
