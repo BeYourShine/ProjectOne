@@ -49,10 +49,12 @@ vi:
       p4: "để dạy về phát triển với"
       pLinkRail2: "Ruby on Rails"
       p5: ". Đây là mẫu ứng dụng cho hướng dẫn"
-  user:
+  users:
     new:
       title: "Đăng ký"
-      p1: "Đây là trang đăng ký mới của người dùng."
+      confirm: "Nhập lại mật khẩu"
+      submit: "Tạo tài khoản"
+      errMess: "shared/error_messages"
   layouts:
     footer:
       p1: "Bộ"
@@ -72,3 +74,6 @@ vi:
       pLinkLog: "Đăng nhập"
     shim:
       ie: "//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"
+  shared:
+    error_messages:
+      p1: "Biểu mẫu chứa "

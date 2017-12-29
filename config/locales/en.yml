@@ -49,10 +49,12 @@ en:
       p4: "to teach web development with"
       pLinkRail2: "Ruby on Rails"
       p5: ". This is the sample application for the tutorial."
-  user:
+  users:
     new:
       title: "Sign up"
-      p1: "This will be a signup page for new users."
+      confirm: "Confirmations"
+      submit: "Create my account"
+      errMess: "shared/error_messages"
   layouts:
     footer:
       p1: "The"
@@ -72,3 +74,6 @@ en:
       pLinkLog: "Log in"
     shim:
       ie: "//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"
+  shared:
+    error_messages:
+      p1: "The form contains "
