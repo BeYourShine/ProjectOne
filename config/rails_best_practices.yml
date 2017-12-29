@@ -36,13 +36,14 @@ RemoveUnusedMethodsInControllersCheck: {
   except_methods: ["StaticPagesController#home","StaticPagesController#help",
   "StaticPagesController#about","StaticPagesController#contact",
   "UsersController#new", "UsersController#show", "UsersController#create",
-  "ApplicationController#change_language"
+  "ApplicationController#change_language", "SessionsController#destroy",
+  "SessionsController#create"
   ],
   ignored_files: []
 }
 RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
 RemoveUnusedMethodsInModelsCheck: {
-  except_methods: [],
+  except_methods: ["User#digest"],
   ignored_files: []
 }
 ReplaceComplexCreationWithFactoryMethodCheck: { attribute_assignment_count: 2 }

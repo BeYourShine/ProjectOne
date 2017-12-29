@@ -63,7 +63,23 @@ en:
       link_home: "Home"
       link_help: "Help"
       link_log: "Log in"
+      link_user: "User"
+      p_account: "Account "
+      link_profile: "Profile"
+      link_setting: "Settings"
+      link_log_out: "Log out"
+      link_log_in: "Log in"
   shared:
     error_messages:
       h1: "The form contains "
       error: "error"
+  sessions:
+    new:
+      title: "Log in"
+      lable_email: Email
+      lable_pass: "Password"
+      lable_submit: "Log in"
+      p1: "New user? "
+      link_signup: "Sign up now!"
+    flash:
+      invalid_login: "Invalid email/password combination !"

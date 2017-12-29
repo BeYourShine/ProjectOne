@@ -63,7 +63,23 @@ vi:
       link_home: "Trang chủ"
       link_help: "Trợ gíup"
       link_log: "Đăng nhập"
+      link_user: "Người dùng"
+      p_account: "Tài khoản "
+      link_profile: "Hồ sơ"
+      link_setting: "Cài đặt"
+      link_log_out: "Đăng suất"
+      link_log_in: "Đăng nhập"
   shared:
     error_messages:
       h1: "Biểu mẫu cần sửa "
       error: "Lỗi"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      lable_email: Email
+      lable_pass: "Mật khẩu"
+      lable_submit: "Đăng nhập"
+      p1: "Tài khoản mới? "
+      link_signup: "Đăng ký ngay!"
+    flash:
+      invalid_login: "Mật khẩu hoặc email không đúng !"
