@@ -101,6 +101,7 @@ en:
       label_remeber: "Remember me on this computer"
       p1: "New user? "
       link_signup: "Sign up now!"
+      forgot_password: " (forgot password)"
     flash:
       invalid_login: "Invalid email/password combination !"
     controller:
@@ -110,10 +111,40 @@ en:
       active_user:
         flash_activate: "Account activated!"
         flash_inactive: "Invalid activation link"
-    mailer:
+  user_mailer:
+    account_activation:
       title: "Sample App"
       p1: "Hi "
       p2: ","
       p3: "Welcome to the Sample App! Click on the link below to activate your account:"
       link_activate: "Activate"
-      subject: "Account activation"
+      subject_activation: "Account activation"
+      subject_reset_pass: "Password_reset"
+    password_reset:
+      h1: "Password reset"
+      p1: "To reset your password click the link below:"
+      link_reset_pass: "Reset password"
+      p2: "This link will expire in two hours."
+      p3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+  password_resets:
+    new:
+      title: "Forgot password"
+      h1: "Forgot password"
+      label_mail: "Email"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      h1: "Reset password"
+      password: "Password"
+      confirmation: "Confirmation"
+      button_submit: "Update password"
+    controller:
+      flash:
+        not_found_email: "Email address not found"
+        intruction: "Email sent with password reset instructions"
+        has_reset_pass: "Password has been reset."
+        pass_reset_expired: "Password reset has expired."
+        not_activated: "User not activated "
+        not_authenticated: "User not authenticated"
+      eror:
+        pass_empty: "can't be empty"
