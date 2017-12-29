@@ -21,3 +21,8 @@
 /yarn-error.log
 
 .byebug_history
+
+# Ignore file database.yml and secrets.yml
+/config/database.yml
+/config/secrets.yml
+
