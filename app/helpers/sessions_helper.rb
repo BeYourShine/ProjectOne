@@ -1,8 +1,8 @@
 module SessionsHelper
   def current_user
-    if user_id == session[:user_id]
+    if (user_id = session[:user_id])
       @current_user ||= User.find_by id: user_id
-    elsif cookie_id == cookies.signed[:user_id]
+    elsif (cookie_id = cookies.signed[:user_id])
       user = User.find_by id: cookie_id
       if user && user.authenticated?(cookies[:remember_token])
         log_in user
@@ -37,6 +37,15 @@ module SessionsHelper
     @user_remember.remember @token
     cookie_pernanet.signed[:user_id] = @user_remember.id
     cookie_pernanet[:remember_token] = @token
+  end
+
+  def redirect_back_or default
+    redirect_to session[:forwarding_url] || default
+    session.delete :forwarding_url
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
   end
 
   private

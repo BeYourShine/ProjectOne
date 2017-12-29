@@ -9,3 +9,10 @@ model:
 helper:
   user:
     gravatar_size: 80
+controller:
+  users:
+    user_per_page: 15
+views:
+  users:
+    user:
+      gravatar_size: 50
