@@ -79,6 +79,7 @@ en:
       lable_email: Email
       lable_pass: "Password"
       lable_submit: "Log in"
+      label_remeber: "Remember me on this computer"
       p1: "New user? "
       link_signup: "Sign up now!"
     flash:
