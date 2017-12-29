@@ -25,3 +25,7 @@
 #Ignore file database.yml and secrets.yml in config
 /config/database.yml
 /config/secrets.yml
+
+#Ignore file in .framgia-ci
+.framgia-ci-result.temp.yml
+/.framgia-ci-reports
