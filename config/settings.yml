@@ -1,0 +1,8 @@
+model:
+  user:
+    user_name:
+      max_length: 50
+    email:
+      max_length: 255
+    pass:
+      min_length: 6
