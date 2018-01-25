@@ -6,3 +6,6 @@ model:
       max_length: 255
     pass:
       min_length: 6
+helper:
+  user:
+    gravatar_size: 80

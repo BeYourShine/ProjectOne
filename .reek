@@ -4,3 +4,6 @@ IrresponsibleModule:
 exclude_paths:
   - 'vendor'
   - 'db/migrate'
+FeatureEnvy:
+  exclude:
+    - "UsersHelper#gravatar_for"
