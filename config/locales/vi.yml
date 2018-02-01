@@ -79,6 +79,7 @@ vi:
       lable_email: Email
       lable_pass: "Mật khẩu"
       lable_submit: "Đăng nhập"
+      label_remeber: "Lưu lại tài khoản cho lần đăng nhập sau"
       p1: "Tài khoản mới? "
       link_signup: "Đăng ký ngay!"
     flash:
