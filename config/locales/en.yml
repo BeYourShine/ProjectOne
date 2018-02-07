@@ -41,14 +41,32 @@ en:
     new:
       title: "Sign up"
       p1: "This will be a signup page for new users."
+      button_text: "Create my account"
+    flash:
+      success_create: "Welcome to the Sample App!"
+      no_user: "Invalid user"
+      success_update: "Profile updated"
+      unable_edit: "Unable to edit another user"
+      please_login: "Please log in."
+      user_delete: "User deleted"
+      find_user_fail: "Invalid user"
+    edit:
+      title: "Edit user"
+      h1: "Update your profile"
+      form_name: "Name"
+      button_text: "Save changes"
+      link_avata: "change"
+    form:
       name: "Name"
       email: "Email"
       pass: "Password"
       confirm: "Confirmation"
-      submit: "Create my account"
-    flash:
-      success_create: "Welcome to the Sample App!"
-      no_user: "Invalid user"
+    index:
+      title: "All users"
+      h1: "All users"
+    user:
+      link_delete: "delete"
+      confirm_delete: "You sure?"
   layouts:
     footer:
       p1: "The"

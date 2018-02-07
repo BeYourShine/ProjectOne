@@ -41,14 +41,31 @@ vi:
     new:
       title: "Đăng ký"
       p1: "Đây là trang đăng ký mới của người dùng."
+      button_text: "Tạo tài khoản"
+    flash:
+      success_create: "Chào mừng tới mẫu ứng dụng!"
+      no_user: "Không tồn tại người dùng"
+      success_update: "Cập nhật thành công người dùng"
+      unable_edit: "Bạn không thể thay đổi tài khoản người dùng khác"
+      please_login: "Bạn cần đăng nhập"
+      user_delete: "Đã xóa người dùng"
+    edit:
+      title: "Cập nhật người dùng"
+      h1: "Cập nhật tài khoản của bạn"
+      form_name: "Người dùng"
+      button_text: "Lưu lại thay đổi"
+      link_avata: "thay đổi"
+    form:
       name: "Tên người dùng"
       email: "Email"
       pass: "Mật khẩu"
       confirm: "Nhập lại mật khẩu"
-      submit: "Tạo mới tài khoản"
-    flash:
-      success_create: "Chào mừng tới mẫu ứng dụng!"
-      no_user: "Không tồn tại người dùng"
+    index:
+      title: "Danh sách người dùng"
+      h1: "Danh sách người dùng"
+    user:
+      link_delete: "Xóa"
+      confirm_delete: "Xóa người dùng?"
   layouts:
     footer:
       p1: "Bộ"

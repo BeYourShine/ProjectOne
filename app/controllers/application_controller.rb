@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   def change_language
     cookies.permanent[:language] = params[:lang].to_sym
-    redirect_to root_url
+    redirect_back fallback_location: root_path
   end
 
   private
@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   attr_reader :lang
 
   def set_locale
-    @lang = cookies[:language].to_sym
+    @lang = cookies[:language].to_sym if cookies[:language]
     I18n.locale =
       if I18n.available_locales.include? lang
         lang
