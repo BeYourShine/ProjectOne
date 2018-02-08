@@ -49,6 +49,8 @@ vi:
       unable_edit: "Bạn không thể thay đổi tài khoản người dùng khác"
       please_login: "Bạn cần đăng nhập"
       user_delete: "Đã xóa người dùng"
+      find_user_fail: "Không tồn tại người dùng"
+      check_mail: "Vui lòng kiểm tra email để kích hoạt tài khoán"
     edit:
       title: "Cập nhật người dùng"
       h1: "Cập nhật tài khoản của bạn"
@@ -101,3 +103,17 @@ vi:
       link_signup: "Đăng ký ngay!"
     flash:
       invalid_login: "Mật khẩu hoặc email không đúng !"
+    controller:
+      account_not_activated: "Tài khoản chưa được kích hoạt. Vui lòng xem chỉ dẫn trong email"
+  account_activation:
+    control:
+      active_user:
+        flash_activate: "Tài khoản đã được kích hoạt!"
+        flash_inactive: "Link kích hoạt sai"
+    mailer:
+      title: "Mẫu ứng dụng"
+      p1: "Xin chào "
+      p2: ","
+      p3: "Chào mừng tới ứng dụng mẫu. Nhấn vào link sau đây để kích hoạt tài khoản"
+      link_activate: "Kích hoạt"
+      subject: "Kích hoạt tài khoản"
