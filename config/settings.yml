@@ -6,6 +6,7 @@ model:
       max_length: 255
     pass:
       min_length: 6
+    pass_reset_expired: 2
 helper:
   user:
     gravatar_size: 80
@@ -16,4 +17,3 @@ views:
   users:
     user:
       gravatar_size: 50
-

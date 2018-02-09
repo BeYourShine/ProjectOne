@@ -101,6 +101,7 @@ vi:
       label_remeber: "Lưu lại tài khoản cho lần đăng nhập sau"
       p1: "Tài khoản mới? "
       link_signup: "Đăng ký ngay!"
+      forgot_password: " (quên mật khẩu)"
     flash:
       invalid_login: "Mật khẩu hoặc email không đúng !"
     controller:
@@ -110,10 +111,41 @@ vi:
       active_user:
         flash_activate: "Tài khoản đã được kích hoạt!"
         flash_inactive: "Link kích hoạt sai"
-    mailer:
+  user_mailer:
+    account_activation:
       title: "Mẫu ứng dụng"
       p1: "Xin chào "
       p2: ","
       p3: "Chào mừng tới ứng dụng mẫu. Nhấn vào link sau đây để kích hoạt tài khoản"
       link_activate: "Kích hoạt"
-      subject: "Kích hoạt tài khoản"
+      subject_activation: "Kích hoạt tài khoản"
+      subject_reset_pass: "Reset mật khẩu"
+    password_reset:
+      h1: "Password reset"
+      p1: "To reset your password click the link below:"
+      link_reset_pass: "Reset password"
+      p2: "This link will expire in two hours."
+      p3: "If you did not request your password to be reset, please ignore this email and
+your password will stay as it is."
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      h1: "Quên mật khẩu"
+      label_mail: "Email"
+      submit: "Xác nhận"
+    edit:
+      title: "Reset mật khẩu"
+      h1: "Reset mật khẩu"
+      password: "Mật khẩu"
+      confirmation: "Nhập lại mật khẩu"
+      button_submit: "Cập nhật mật khẩu"
+    controller:
+      flash:
+        intruction: "Bạn vui lòng làm theo chỉ dẫn trong email để kích hoạt tài khoản"
+        not_found_email: "Không tìm thấy địa chỉ email"
+        has_reset_pass: "Password has been reset."
+        pass_reset_expired: "Password reset has expired."
+        not_activated: "User not activated "
+        not_authenticated: "User not authenticated"
+      eror:
+        pass_empty: "can't be empty"
