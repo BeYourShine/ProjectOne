@@ -57,8 +57,9 @@ class PasswordResetsController < ApplicationController
   end
 
   def send_mail_valid_user user
-    user.create_reset_digest
-    user.send_password_reset_email
+    reset_token = User.new_token
+    user.create_reset_digest reset_token
+    UserMailer.password_reset(user, reset_token).deliver_now
     flash[:info] = t "password_resets.controller.flash.intruction"
     redirect_to root_url
   end

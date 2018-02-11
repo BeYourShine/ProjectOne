@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :find_user, only: %i(show edit update destroy)
+  before_action :find_user, only: %i(show edit update destroy following
+                                     followers)
   before_action :logged_in_user, only: %i(destroy edit index update)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
@@ -16,15 +17,14 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if user.save
-      user.send_activation_email
-      flash[:info] = t "users.flash.check_mail"
-      redirect_to root_url
+      after_save user
     else
       render :new
     end
   end
 
   def show
+    redirect_to root_path && return unless user.activated?
     @microposts = user.microposts.paginate page: params[:page]
   end
 
@@ -45,12 +45,32 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = t "users.controller.following.title"
+    @users = user.following.paginate page: params[:page]
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "users.controller.followers.title"
+    @users = user.followers.paginate page: params[:page]
+    render "show_follow"
+  end
+
   private
 
   attr_reader :user
 
   def admin_user
     redirect_to root_url unless current_user.admin?
+  end
+
+  def after_save user
+    activation_token = User.new_token
+    user.create_activation_digest activation_token
+    UserMailer.account_activation(user, activation_token).deliver_now
+    flash[:info] = t "users.flash.check_mail"
+    redirect_to root_url
   end
 
   def correct_user

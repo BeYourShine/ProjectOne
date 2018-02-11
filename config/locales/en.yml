@@ -58,6 +58,10 @@ en:
       form_name: "Name"
       button_text: "Save changes"
       link_avata: "change"
+    follow:
+      submit: "Follow"
+    unfollow:
+      submit: "Unfollow"
     form:
       name: "Name"
       email: "Email"
@@ -72,6 +76,11 @@ en:
     show:
       micropost: "Microposts ("
       h3: ")"
+    controller:
+      following:
+        title: "Following"
+      followers:
+        title: "Followers"
   layouts:
     footer:
       p1: "The"
@@ -102,6 +111,9 @@ en:
     micropost_form:
       placeholder_text_area: "Compose new micropost..."
       submit: "Post"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       title: "Log in"

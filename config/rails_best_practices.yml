@@ -39,7 +39,9 @@ RemoveUnusedMethodsInControllersCheck: {
   "UsersController#edit", "UsersController#index", "UsersController#update",
   "ApplicationController#change_language", "SessionsController#destroy",
   "SessionsController#create", "PasswordResetsController#create",
-  "PasswordResetsController#after_update_pass"
+  "PasswordResetsController#after_update_pass", "UsersController#after_save",
+  "RelationshipsController#after_follow",
+  "RelationshipsController#after_unfollow"
   ],
   ignored_files: []
 }

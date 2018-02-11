@@ -7,6 +7,7 @@ $gray-light: #777;
 $gray-daker: #222;
 $gray: #555;
 $white: #fff;
+$blue: #00f;
 $bbb: #bbb;
 $red: #f00;
 $e8: #e8e8e8;
@@ -218,6 +219,46 @@ aside {
   margin-top: 15px;
 }
 
+.stats {
+  margin-top: 0;
+  overflow: auto;
+  padding: 0;
+
+  a {
+    border-left: 1px solid $gray-lighter;
+    color: $gray;
+    float: left;
+    padding: 0 10px;
+
+    &:first-child {
+      border: 0;
+      padding-left: 0;
+    }
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  strong {
+    display: block;
+  }
+}
+
+.user-avatars {
+  margin-top: 10px;
+  overflow: auto;
+
+  .gravatar {
+    margin: 1px;
+  }
+
+  a {
+    padding: 0;
+  }
+}
+
 // Users index
 
 .users {
@@ -228,6 +269,10 @@ aside {
     border-bottom: 1px solid $gray-lighter;
     overflow: auto;
     padding: 10px 0;
+  }
+
+  .follow {
+    padding: 0;
   }
 }
 

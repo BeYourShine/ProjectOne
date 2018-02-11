@@ -12,6 +12,7 @@
       <%= micropost.created_at.to_s %>
     </abbr>
     <%= t ".p2" %>
+    <% return unless current_user %>
     <% if current_user.current_user? micropost.user %>
       <%= link_to t(".delete_post"), micropost, method: :delete,
         data: {confirm: t(".confirm_delete")} %>

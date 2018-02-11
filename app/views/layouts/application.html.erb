@@ -8,6 +8,8 @@
     <%= javascript_include_tag "application",
       "data-turbolinks-track": "reload" %>
     <%= render "layouts/shim" %>
+    <%= javascript_include_tag "i18n" %>
+    <%= javascript_include_tag "translations", skip_pipeline: true %>
     <script type="text/javascript">
       I18n.defaultLocale = "<%= I18n.default_locale %>";
       I18n.locale = "<%= I18n.locale %>";
