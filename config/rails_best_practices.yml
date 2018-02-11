@@ -43,7 +43,8 @@ RemoveUnusedMethodsInControllersCheck: {
   ],
   ignored_files: []
 }
-RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
+RemoveUnusedMethodsInHelpersCheck: {
+  except_methods: ["SessionsHelper#logged_in_user"]}
 RemoveUnusedMethodsInModelsCheck: {
   except_methods: ["User#digest"],
   ignored_files: []

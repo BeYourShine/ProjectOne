@@ -68,12 +68,15 @@ class PasswordResetsController < ApplicationController
   end
 
   def valid_user
-    unless user && user.activated?
-      flash[:danger] = t "password_resets.controller.flash.not_activated"
-      redirect_root
-    end
+    action_not_activate user unless user && user.activated?
     return if user.authenticated? :reset, params[:id]
     flash[:danger] = t "password_resets.controller.flash.not_authenticated"
+    redirect_root
+  end
+
+  def action_not_activate user
+    flash[:danger] = t "password_resets.controller.flash.not_activated"
+    user.send_activation_email
     redirect_root
   end
 end

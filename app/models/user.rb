@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   attr_reader :remember_token, :activation_token, :reset_token
 
+  has_many :microposts, dependent: :destroy
+
   validates :email, format: {with: VALID_EMAIL_REGEX},
     length: {maximum: Settings.model.user.email.max_length},
     presence: true,
@@ -32,6 +34,10 @@ class User < ApplicationRecord
 
   def current_user? user
     user == self
+  end
+
+  def feed
+    microposts.recent
   end
 
   def forget

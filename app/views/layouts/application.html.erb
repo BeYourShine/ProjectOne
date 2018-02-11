@@ -8,6 +8,10 @@
     <%= javascript_include_tag "application",
       "data-turbolinks-track": "reload" %>
     <%= render "layouts/shim" %>
+    <script type="text/javascript">
+      I18n.defaultLocale = "<%= I18n.default_locale %>";
+      I18n.locale = "<%= I18n.locale %>";
+    </script>
   </head>
 
   <body>

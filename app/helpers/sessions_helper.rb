@@ -52,4 +52,11 @@ module SessionsHelper
   def cookie_pernanet
     cookies.permanent
   end
+
+  def logged_in_user
+    return if logged_in?
+    store_location
+    flash[:danger] = t "users.flash.unable_edit"
+    redirect_to login_url
+  end
 end

@@ -15,6 +15,7 @@ vi:
       link_signup: "Đăng ký ngay!"
       img: "rails1.png"
       img_alt: "Rails ảnh"
+      h1_feed: "Bài viết"
     help:
       title: "Trợ giúp"
       p1: "Nhận trợ gíup từ rails từ rails tutorial tại "
@@ -68,6 +69,9 @@ vi:
     user:
       link_delete: "Xóa"
       confirm_delete: "Xóa người dùng?"
+    show:
+      micropost: "bài viết ("
+      h3: ")"
   layouts:
     footer:
       p1: "Bộ"
@@ -92,6 +96,12 @@ vi:
     error_messages:
       h1: "Biểu mẫu cần sửa "
       error: "Lỗi"
+    user_info:
+      link_my_profile: "Tài khoản của tôi"
+      micropost: "bài viết"
+    micropost_form:
+      placeholder_text_area: "Tạo mới dòng tweet"
+      submit: "Đăng"
   sessions:
     new:
       title: "Đăng nhập"
@@ -121,12 +131,11 @@ vi:
       subject_activation: "Kích hoạt tài khoản"
       subject_reset_pass: "Reset mật khẩu"
     password_reset:
-      h1: "Password reset"
-      p1: "To reset your password click the link below:"
-      link_reset_pass: "Reset password"
-      p2: "This link will expire in two hours."
-      p3: "If you did not request your password to be reset, please ignore this email and
-your password will stay as it is."
+      h1: "Reset mật khẩu"
+      p1: "Để reset mật khẩu vui lòng nhấn link dưới đây:"
+      link_reset_pass: "Reset mật khẩu"
+      p2: "Link có hiệu lực trong vòng 2h."
+      p3: "Nếu bạn không yêu cầu reset mật khẩu, bạn có thể bỏ qua email này, mật khẩu của bạn sẽ không thay đổi."
   password_resets:
     new:
       title: "Quên mật khẩu"
@@ -149,3 +158,19 @@ your password will stay as it is."
         not_authenticated: "User not authenticated"
       eror:
         pass_empty: "can't be empty"
+  microposts:
+    micropost:
+      p1: "Được đăng"
+      p2: " trước."
+      delete_post: "xóa"
+      confirm_delete: "Bạn muốn xóa?"
+    controller:
+      flash:
+        create_micropost: "Đã tạo bài đăng!"
+        delete_micropost: "Đã xóa bài đăng"
+    model:
+      picture_size:
+        error: "file cần nhỏ hơn 5MB"
+  javascript:
+    micropost:
+      alert_maximum_size: "Kích thước file tối đa là 5MB. Vui lòng chọn file nhỏ hơn"

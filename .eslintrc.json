@@ -4,7 +4,8 @@
     "jquery": true
   },
   "globals": {
-    "window": true
+    "window": true,
+    "I18n": true
   },
 
   "extends": "eslint:recommended",

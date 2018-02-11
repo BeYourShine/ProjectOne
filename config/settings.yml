@@ -7,6 +7,11 @@ model:
     pass:
       min_length: 6
     pass_reset_expired: 2
+  micropost:
+    conten:
+      max_length: 140
+    picture_size:
+      max_size: 5
 helper:
   user:
     gravatar_size: 80
@@ -16,4 +21,10 @@ controller:
 views:
   users:
     user:
+      gravatar_size: 50
+  micropost:
+    micropost:
+      gravatar_size: 50
+  shared:
+    user_info:
       gravatar_size: 50
